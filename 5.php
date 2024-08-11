@@ -7,14 +7,26 @@
 
 $arr = [];
 
-for($i = 0; $i <100; $i++){
-    $temp = rand(1,200);
+/*while (count($arr) != 100) {
+    $temp = rand(1, 200);
+    if (!in_array($temp, $arr)) {
+        $arr[] = $temp;
+    }
+    
+}*/
 
-    while(in_array($temp, $arr)){
-        $temp = rand(1,200);
+$arr = range(1, 200);
+shuffle($arr);
+$arr = array_slice($arr, 100);
+
+/*for ($i = 0; $i < 100; $i++) {
+    $temp = rand(1, 200);
+
+    while (in_array($temp, $arr)) {
+        $temp = rand(1, 200);
     }
 
-    $arr[$i] = $temp;
-}
+    $arr[] = $temp;
+}*/
 
-var_dump($arr);
+print_r($arr);

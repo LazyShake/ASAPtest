@@ -1,6 +1,6 @@
 <?php
 
-$str = "abcdef";
+$str = "abcde";
 
 $str = strrev($str);
 

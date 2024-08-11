@@ -1,4 +1,4 @@
 <?php
-$str = 'hello';
+$str = 'привет';
 
-echo $str[strlen($str)-1];
+echo mb_substr($str, -1);

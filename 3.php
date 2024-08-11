@@ -11,9 +11,9 @@
 $arr =  [1, 2, 3, 4, 5, 0, 0, 0, 0, 0];
 //var_dump($arr);
 
-for($i = 0; $i < count($arr)-1;$i+=2){
-        $arr[count($arr)-$i-1] = $arr[(int) (count($arr)-$i-1)/2];
-        $arr[count($arr)-$i-2] = $arr[(int) (count($arr)-$i-1)/2];
+for ($i = 5; $i >= 1; $i -= 1) {
+        $arr[($i * 2) - 1] = $arr[$i - 1];
+        $arr[($i * 2) - 2] = $arr[$i - 1];
 }
 
-var_dump($arr);
+print_r($arr);
